@@ -180,7 +180,7 @@ argument와 함께 ch3_load_display_save.py 파일을 실행합니다.
 
 ```bash
 # ch3_load_display_save.py 파일을 실행하면서 -i 옵션으로 이미지 경로를 전달합니다.
-uv run ch3_load_display_save.py -i ~/Pictures/example.png
+uv run ch3_load_display_save.py -i ./sample.png
 
 # 새창에 아무키나 눌러 이미지를 닫습니다.
 # [Enter]
@@ -310,7 +310,7 @@ argument와 함께 ch4_getting_and_setting.py 파일을 실행합니다.
 
 ```bash
 # ch4_getting_and_setting.py 파일을 실행하면서 -i 옵션으로 이미지 경로를 전달합니다.
-uv run ch4_getting_and_setting.py -i ~/Pictures/example.png
+uv run ch4_getting_and_setting.py -i ./sample.png
 
 # Corner와 Updated 두 개의 창이 열립니다. 
 # Corner 창에는 원래 이미지의 왼쪽 위 100x100 픽셀 영역이 표시되고
@@ -347,7 +347,6 @@ def main():
     # 각 채널은 uint8 타입 (0~255 범위의 정수값을 가짐)
     # zeros: 모든 픽셀 값을 0으로 초기화 (검은색 이미지)
     canvas = np.zeros((300, 300, 3), dtype="uint8")
-
 
     cv2.line(canvas, (0, 0), (300, 300), green)
     cv2.line(canvas, (300, 0), (0, 300), red)
