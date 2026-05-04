@@ -112,6 +112,25 @@ uv add "opencv-python>=4,<5" "numpy>=2,<3" "scipy>=1,<2" "matplotlib>=3,<4" "mah
 cat pyproject.toml 
 ```
 
+#### Visual Studio Code 설치 및 Pylance 익스텐션 설정
+
+**Windows에서 Visual Studio Code 설치 (winget)**
+
+```powershell
+# 터미널에서 winget를 이용해 VS Code 설치
+winget install Microsoft.VisualStudioCode
+```
+
+**Pylance 익스텐션 설치**
+
+VS Code 실행 후 확장 프로그램 탭(Ctrl+Shift+X)에서 "Pylance" 검색 후 설치하거나, 터미널에서:
+
+```powershell
+code --install-extension ms-python.vscode-pylance
+```
+
+Pylance가 활성화되면 타입 체크, 자동완성, 오류 진단 등을 지원합니다.
+
 ## 3장 Loading, Displaying, and Saving
 
 `ch3_load_display_save.py` 파일을 아래와 같이 작성합니다.
